@@ -16,6 +16,8 @@ require 'bcrypt'
 require 'active_record'
 require 'logger'
 
+require 'chronic'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 
