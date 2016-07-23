@@ -17,7 +17,7 @@ end
 		name: Faker::Lorem.sentence,
 		description: Faker::Lorem.paragraph,
 		date: Time.at(rand * Time.now.to_i),
-		category:  ["Birthday", "Dinner Party", "Graduation Party", "Theme Party", "Holiday Party", "Baby Shower", "Bridal Shower", "Tea Party", "Fundraising Party", "Costume Party", "Housewarming", "Block Party", "Bachelor Party", "Bachelorette Party", "Cast Party", "Cooking Party", "Dance Party", "Engagement Party", "Farwell Party", "Full Moon Party", "House Party", "Ice Cream Social","Silent Disco", "Surprise Party", "Sleepover", "Tailgate", "Welcome Party"].sample,
+		category:  ["Birthday", "Dinner Party", "Graduation Party", "Theme Party", "Holiday Party", "Baby Shower", "Bridal Shower", "Tea Party", "Fundraising Event", "Costume Party", "Housewarming", "Block Party", "Bachelor Party", "Bachelorette Party", "Cast Party", "Cooking Party", "Dance Party", "Engagement Party", "Farwell Party", "Full Moon Party", "House Party", "Ice Cream Social","Silent Disco", "Surprise Party", "Sleepover", "Tailgate", "Welcome Party", "Other"].sample,
 		creator_id: Faker::Number.number(1)
 
 		)

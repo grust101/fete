@@ -16,19 +16,26 @@
   <script src="/js/application.js"></script>
 
   <title></title>
+
+  
 </head>
 <body>
+  <center>
 
 
-+<% if current_user %>
- <ul>
- <a href="/sessions/delete"> Log Out</a>
- <% else %>
- <ul>
- <a href="/sessions/new"> Log in      |
- </a> <a href="/users/new">        Sign Up </a>
- <% end %>
+    <% if current_user %>
+    <ul>
+     <button type="button"><a href="/sessions/logout"> Log Out</a></button>
+     <% else %>
+     <ul>
+       <button type="button"><a href="/sessions/login">Log in</a></button>
 
-  <%= yield %>
-</body>
-</html>
+       <button type="button"><a href="/users/new">Sign Up</a></button>
+       <% end %>
+
+       <%= yield %>
+     </center>
+   </body>
+
+  
+   </html>
