@@ -10,7 +10,7 @@ Your Events:
 <br>
 <% @user_created_events.each do |event|%>
 <br>
-<%= event.name %>
+<a href="/events/:id"><%= event.name %></a>
 <br>
 <% end %>
 <br>
