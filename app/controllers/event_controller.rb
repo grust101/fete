@@ -1,8 +1,3 @@
-get '/events' do
-  even
-end
-
-
 get '/events/create' do
   erb :'/events/create'
 end
@@ -13,5 +8,5 @@ post '/events' do
 end
 
 get '/events/show' do
-  "Hello World"
+  
 end
