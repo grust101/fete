@@ -19,6 +19,8 @@ post '/events' do
 end
 
 get '/events/:id' do
-  @event = Event.find_by(params[:name])
+  @events = Event.where(creator_id: session[:id])
+@event = @events.find(params[:id])
   erb :'/events/details'
+
 end
