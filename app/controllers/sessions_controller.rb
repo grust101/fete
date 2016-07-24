@@ -8,6 +8,7 @@ post '/sessions' do
 
 	if @user && @user.authenticate(params[:user][:password])
 		session[:id] = @user.id
+
 		redirect "/users/#{session[:id]}"
 	else
 		@error = "Log in info is incorrect, sorry boo."
