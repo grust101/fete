@@ -9,6 +9,13 @@ post '/users' do
 
 	if @user.save
 		login(@user)
+		if request.xhr?
+			data = {new_user: @user}.to_json
+			p @user
+		else
+		end
+
+
 		redirect "/users/#{current_user.id}"
 	else
 		@error = "Looks like that account already exists. Please try again or log in"
