@@ -9,7 +9,7 @@ post '/events' do
  @event.creator_id = current_user.id
 
  if @event.save
-		redirect "/events/:id"
+		redirect "/users/#{current_user.id}"
 	else
 		@error = "could not create event"
 		p @error
