@@ -6,6 +6,7 @@ post '/users' do
 
 	@user = User.new(params[:user])
 
+
 	if @user.save
 		login(@user)
 		redirect "/users/#{current_user.id}"
@@ -19,6 +20,7 @@ end
 get '/users/:id' do 
 
 @user = User.find(params[:id])
+@user_created_events = @user.created_events.all
 
 erb :'/users/profile'
 

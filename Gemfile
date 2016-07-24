@@ -22,9 +22,10 @@ group :test do
   gem 'capybara'
 end
 
+ gem 'bcrypt-ruby'
 
 group :test, :development do
   gem 'factory_girl'
   gem 'faker'
-  gem 'bcrypt'
+ 
 end
